@@ -1,3 +1,3 @@
 # j-site
 
-a website made with Jekyll
+A website made with Jekyll
