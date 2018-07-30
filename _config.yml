@@ -1,2 +1,3 @@
 baseurl: '/j-site'
 permalink: pretty
+exclude: ['README.md']

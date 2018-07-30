@@ -9,7 +9,15 @@
 </head>
 <body>
   <div class="container">
-    {{ content }}
+    <header>
+      {% include nav.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>&copy; 2018 Daniel Munoz</p>
+    </footer>
   </div>
 </body>
 </html>
