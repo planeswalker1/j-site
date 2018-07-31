@@ -11,7 +11,13 @@ html {
 body {
   background-color: #f5f5f5;
   color: #222;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.4;
   margin: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

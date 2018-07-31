@@ -1,0 +1,46 @@
+.nav__name {
+  color: #fff;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link:before {
+  background-color: #fff;
+  content: '';
+  height: 1px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site__header,
+.site__body {
+  background-color: white;
+  padding: 20px;
+}
+
+.color--red {
+  color: #ff5851;
+}
+
+.site__header {
+  background-color: #ff5851;
+  padding: 0;
+}
+
+.about__heading {
+  font-size: 1.5em;
+}
+
+.copy {
+  margin: 0;
+}

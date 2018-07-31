@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" {% if page.main-class %}class="height"{% endif %}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Daniel Munoz</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      {% include nav.html %}
-    </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer>
-      <p>&copy; 2018 Daniel Munoz</p>
-    </footer>
+<body {% if page.main-class %}class="height"{% endif %}>
+  <div class="container {% if page.main-class %}height flex-column{% endif %}">
+    <div class="site {% if page.main-class %}height {% endif %}">
+      <div class="site__header">
+        <header>
+            {% include nav.html %}
+        </header>
+      </div>
+      <div class="site__body {% if page.main-class %}height--small flex-column{% endif %}">
+        <main {% if page.main-class %}class="flex-grow"{% endif %}>
+          {{ content }}
+        </main>
+        <footer>
+          <p class="copy">&copy; 2018 Daniel Munoz</p>
+        </footer>
+      </div>
+    </div>
   </div>
 </body>
 </html>
